@@ -1,0 +1,100 @@
+{
+    "books": [
+        {
+            "bookId": 1,
+            "bookName": "1984",
+            "author": "George Orwell",
+            "image": "1984.jpg",
+            "review": "1984 is a dystopian novel that explores the consequences of totalitarianism, surveillance, and propaganda. Orwell's portrayal of a society controlled by a single party has become a classic warning against the dangers of authoritarianism.",
+            "totalPages": 328,
+            "rating": 4.5,
+            "category": "Fiction",
+            "tags": [
+                "Dystopian",
+                "Political"
+            ],
+            "publisher": "Secker & Warburg",
+            "yearOfPublishing": 1949
+        },
+        {
+            "bookId": 2,
+            "bookName": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "image": "to_kill_a_mockingbird.jpg",
+            "review": "To Kill a Mockingbird is a powerful story that tackles themes of racial injustice, morality, and empathy. Set in the American South during the 1930s, it follows the trial of a black man falsely accused of raping a white woman.",
+            "totalPages": 281,
+            "rating": 4.8,
+            "category": "Fiction",
+            "tags": [
+                "Coming of Age",
+                "Legal Drama"
+            ],
+            "publisher": "J.B. Lippincott & Co.",
+            "yearOfPublishing": 1960
+        },
+        {
+            "bookId": 3,
+            "bookName": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "image": "the_great_gatsby.jpg",
+            "review": "The Great Gatsby is a captivating tale of wealth, love, and the American Dream. Set in the Roaring Twenties, it follows the enigmatic Jay Gatsby and his obsession with the beautiful Daisy Buchanan.",
+            "totalPages": 180,
+            "rating": 4.7,
+            "category": "Fiction",
+            "tags": [
+                "Romance",
+                "Classic"
+            ],
+            "publisher": "Charles Scribner's Sons",
+            "yearOfPublishing": 1925
+        },
+        {
+            "bookId": 4,
+            "bookName": "Sapiens: A Brief History of Humankind",
+            "author": "Yuval Noah Harari",
+            "image": "sapiens.jpg",
+            "review": "Sapiens offers a thought-provoking journey through the history of Homo sapiens, from the emergence of our species in Africa to the present day. Harari explores how cognitive revolution, agricultural revolution, and scientific revolution shaped human societies.",
+            "totalPages": 443,
+            "rating": 4.6,
+            "category": "Non-fiction",
+            "tags": [
+                "History",
+                "Anthropology"
+            ],
+            "publisher": "Harper",
+            "yearOfPublishing": 2011
+        },
+        {
+            "bookId": 5,
+            "bookName": "The Catcher in the Rye",
+            "author": "J.D. Salinger",
+            "image": "the_catcher_in_the_rye.jpg",
+            "review": "The Catcher in the Rye is a timeless coming-of-age novel that follows the disillusioned teenager Holden Caulfield as he navigates the challenges of adolescence and society. Salinger's portrayal of alienation and rebellion continues to resonate with readers.",
+            "totalPages": 277,
+            "rating": 4.4,
+            "category": "Fiction",
+            "tags": [
+                "Coming of Age",
+                "Literary"
+            ],
+            "publisher": "Little, Brown and Company",
+            "yearOfPublishing": 1951
+        },
+        {
+            "bookId": 6,
+            "bookName": "The Hobbit",
+            "author": "J.R.R. Tolkien",
+            "image": "the_hobbit.jpg",
+            "review": "The Hobbit is a captivating adventure set in the fantasy realm of Middle-earth. Bilbo Baggins, a hobbit, embarks on a journey to reclaim the lost kingdom of Erebor from the fearsome dragon Smaug. Along the way, he encounters trolls, elves, and goblins.",
+            "totalPages": 310,
+            "rating": 4.9,
+            "category": "Fantasy",
+            "tags": [
+                "Adventure",
+                "Classic"
+            ],
+            "publisher": "George Allen & Unwin",
+            "yearOfPublishing": 1937
+        }
+    ]
+}
