@@ -5,7 +5,7 @@ const BookDetails = () => {
     const { id } = useParams();
     const idInt = parseInt(id)
     const book = books.find(book => book.bookId === idInt)
-    const { image, tags, bookName, author, category, publisher, yearOfPublishing, rating, bookId, review, totalPages } = book;
+    const { image, tags, bookName, author, category, publisher, yearOfPublishing, rating, review, totalPages } = book;
 
 
     console.log(book);
@@ -13,13 +13,13 @@ const BookDetails = () => {
 
         <div>
             <div className="flex flex-col lg:flex-row gap-12 p-6">
-                <div className="bg-base-200 p-12 flex-1">
-                    <img src={image} alt="" />
+                <div className="bg-base-200 p-12 flex-1 flex justify-center items-center rounded-xl">
+                    <img className="w-80" src={image} alt="" />
                 </div>
 
                 <div className="flex-1">
                     <div>
-                        <h3 className="text-[40px] font-bold">{bookName}</h3>
+                        <h3 className="text-[40px] font-bold font-playfair">{bookName}</h3>
                         <p className="text-[20px] font-medium mt-5">{author}</p>
                         <p className="text-[20px] font-medium border-y-2 py-3 mt-5">{category}</p>
                         <p className="text-[16px] mt-6"> <span className="font-bold">Review : </span>{review}</p>

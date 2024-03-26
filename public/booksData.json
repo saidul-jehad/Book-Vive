@@ -1,9 +1,9 @@
 [
     {
         "bookId": 1,
-        "bookName": "1984",
+        "bookName": "To Kill Maker",
         "author": "George Orwell",
-        "image": "https://t4.ftcdn.net/jpg/00/06/18/35/360_F_6183579_jA5E2ijPgCcCjjo0gl896W3pDwKuCA0m.jpg",
+        "image": "https://i.ibb.co/Tqjc4wk/pngwing-1-1.png",
         "review": "1984 is a dystopian novel that explores the consequences of totalitarianism, surveillance, and propaganda. Orwell's portrayal of a society controlled by a single party has become a classic warning against the dangers of authoritarianism.",
         "totalPages": 328,
         "rating": 4.5,
@@ -19,7 +19,7 @@
         "bookId": 2,
         "bookName": "To Kill a Mockingbird",
         "author": "Harper Lee",
-        "image": "https://t4.ftcdn.net/jpg/00/06/18/35/360_F_6183579_jA5E2ijPgCcCjjo0gl896W3pDwKuCA0m.jpg",
+        "image": "https://i.ibb.co/Wx5vLG4/kindpng-7318921.png",
         "review": "To Kill a Mockingbird is a powerful story that tackles themes of racial injustice, morality, and empathy. Set in the American South during the 1930s, it follows the trial of a black man falsely accused of raping a white woman.",
         "totalPages": 281,
         "rating": 4.8,
@@ -35,7 +35,7 @@
         "bookId": 3,
         "bookName": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
-        "image": "https://t4.ftcdn.net/jpg/00/06/18/35/360_F_6183579_jA5E2ijPgCcCjjo0gl896W3pDwKuCA0m.jpg",
+        "image": "https://i.ibb.co/HdvMsgr/kindpng-1064993.png",
         "review": "The Great Gatsby is a captivating tale of wealth, love, and the American Dream. Set in the Roaring Twenties, it follows the enigmatic Jay Gatsby and his obsession with the beautiful Daisy Buchanan.",
         "totalPages": 180,
         "rating": 4.7,
@@ -94,5 +94,56 @@
         ],
         "publisher": "George Allen & Unwin",
         "yearOfPublishing": 1937
+    },
+    {
+        "bookId": 7,
+        "bookName": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "image": "the_hobbit.jpg",
+        "review": "An enchanting tale of adventure and heroism set in Middle-earth. Tolkien's masterful world-building and engaging narrative continue to captivate readers of all ages.",
+        "totalPages": 310,
+        "rating": 4.7,
+        "category": "Fantasy",
+        "tags": [
+            "Adventure",
+            "Quest",
+            "Middle-earth"
+        ],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1937
+    },
+    {
+        "bookId": 8,
+        "bookName": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "image": "the_da_vinci_code.jpg",
+        "review": "A gripping thriller that intertwines art, history, and religion in a fast-paced narrative. Brown keeps readers on the edge of their seats with unexpected twists and turns.",
+        "totalPages": 489,
+        "rating": 4.3,
+        "category": "Thriller",
+        "tags": [
+            "Mystery",
+            "Conspiracy",
+            "Art"
+        ],
+        "publisher": "Doubleday",
+        "yearOfPublishing": 2003
+    },
+    {
+        "bookId": 9,
+        "bookName": "The Hunger Games",
+        "author": "Suzanne Collins",
+        "image": "the_hunger_games.jpg",
+        "review": "A riveting dystopian novel that explores themes of survival, sacrifice, and rebellion. Collins' dynamic characters and suspenseful plot keep readers hooked until the very end.",
+        "totalPages": 374,
+        "rating": 4.6,
+        "category": "Science Fiction",
+        "tags": [
+            "Dystopian",
+            "Survival",
+            "Action"
+        ],
+        "publisher": "Scholastic Press",
+        "yearOfPublishing": 2008
     }
 ]

@@ -7,15 +7,17 @@ const Book = ({ book }) => {
     return (
         <div>
             <Link to={`/book/${bookId}`}>
-                <div className="card bg-base-200 shadow-xl">
-                    <figure className="p-7"><img className="rounded-xl" src={image} alt="Shoes" /></figure>
-                    <div className="card-body">
+                <div className="card p-6 border-2">
+                    <div className="bg-base-200 rounded-xl">
+                        <figure className="p-7"><img className="rounded-xl " src={image} alt="Shoes" /></figure>
+                    </div>
+                    <div className="card-body px-0">
 
                         <div className="flex gap-4">
                             <p className=" p-1 flex justify-center items-center rounded-full w-auto text-green-500 text-[16px] flex-1 font-medium bg-[#23BE0A0D]">{tags[0]}</p>
                              <p className="p-1 flex justify-center items-center rounded-full w-auto text-green-500 text-[16px] flex-1 font-medium bg-[#23BE0A0D]">{tags[1]}</p>
                         </div>
-                        <h2 className="card-title mt-4">
+                        <h2 className="card-title mt-4 font-playfair">
                             {bookName}
                         </h2>
                         <p className="mt-2"> <span>By : </span>{author}</p>

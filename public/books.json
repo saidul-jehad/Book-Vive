@@ -1,0 +1,146 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "https://i.ibb.co/Tqjc4wk/pngwing-1-1.png",
+        "review": "A timeless classic that tackles the issue of racial injustice in a small Southern town. Harper Lee's writing is poignant and thought-provoking.",
+        "totalPages": 281,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": [
+            "Classic",
+            "Legal Drama"
+        ],
+        "publisher": "J. B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 2,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "https://i.ibb.co/Wx5vLG4/kindpng-7318921.png",
+        "review": "A dystopian masterpiece that explores themes of surveillance, government control, and individual freedom. Orwell's prophetic vision continues to resonate in today's society.",
+        "totalPages": 328,
+        "rating": 4.7,
+        "category": "Science Fiction",
+        "tags": [
+            "Dystopian",
+            "Political Satire"
+        ],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://i.ibb.co/HdvMsgr/kindpng-1064993.png",
+        "review": "An exquisite portrayal of the Jazz Age that delves into the lives of the rich and disillusioned. Fitzgerald's prose is dazzling, capturing the essence of the American Dream and its demise.",
+        "totalPages": 218,
+        "rating": 4.8,
+        "category": "Fiction",
+        "tags": [
+            "Classic",
+            "Romance"
+        ],
+        "publisher": "Charles Scribner's Sons",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": 4,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/Bc0mS26/kindpng-4022054-1.png",
+        "review": "A delightful comedy of manners that explores themes of love, marriage, and societal expectations. Austen's wit and charm shine through her vivid characters and sparkling dialogue.",
+        "totalPages": 279,
+        "rating": 4.6,
+        "category": "Fiction",
+        "tags": [
+            "Classic",
+            "Romance"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    },
+    {
+        "bookId": 5,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "https://i.ibb.co/yfgV1mW/kindpng-81724-1.png",
+        "review": "A coming-of-age novel that captures the disillusionment and alienation of adolescence. Salinger's protagonist, Holden Caulfield, remains an iconic symbol of teenage angst.",
+        "totalPages": 224,
+        "rating": 4.4,
+        "category": "Fiction",
+        "tags": [
+            "Coming-of-Age",
+            "Literary Fiction"
+        ],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    },
+    {
+        "bookId": 6,
+        "bookName": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "image": "https://i.ibb.co/7vVfYYs/kindpng-2193744-1.png",
+        "review": "The beginning of an enchanting journey into the wizarding world. Rowling's imaginative storytelling and richly drawn characters make this a beloved modern classic.",
+        "totalPages": 309,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": [
+            "Magic",
+            "Adventure"
+        ],
+        "publisher": "Bloomsbury",
+        "yearOfPublishing": 1997
+    },
+    {
+        "bookId": 7,
+        "bookName": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "image": "https://i.ibb.co/WfRw8vH/kindpng-5624060-1.png",
+        "review": "An enchanting tale of adventure and heroism set in Middle-earth. Tolkien's masterful world-building and engaging narrative continue to captivate readers of all ages.",
+        "totalPages": 310,
+        "rating": 4.7,
+        "category": "Fantasy",
+        "tags": [
+            "Adventure",
+            "Quest"
+        ],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1937
+    },
+    {
+        "bookId": 8,
+        "bookName": "The Da Vinci Code",
+        "author": "Dan Brown",
+        "image": "https://i.ibb.co/n6fDhKz/kindpng-2592315-1.png",
+        "review": "A gripping thriller that intertwines art, history, and religion in a fast-paced narrative. Brown keeps readers on the edge of their seats with unexpected twists and turns.",
+        "totalPages": 489,
+        "rating": 4.3,
+        "category": "Thriller",
+        "tags": [
+            "Mystery",
+            "Conspiracy"
+        ],
+        "publisher": "Doubleday",
+        "yearOfPublishing": 2003
+    },
+    {
+        "bookId": 9,
+        "bookName": "The Hunger Games",
+        "author": "Suzanne Collins",
+        "image": "https://i.ibb.co/RpVmPwF/kindpng-4945926-1.png",
+        "review": "A riveting dystopian novel that explores themes of survival, sacrifice, and rebellion. Collins' dynamic characters and suspenseful plot keep readers hooked until the very end.",
+        "totalPages": 374,
+        "rating": 4.6,
+        "category": "Science Fiction",
+        "tags": [
+            "Dystopian",
+            "Survival"
+        ],
+        "publisher": "Scholastic Press",
+        "yearOfPublishing": 2008
+    }
+]

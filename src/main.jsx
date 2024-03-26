@@ -32,7 +32,7 @@ const router = createBrowserRouter([
       {
         path: '/book/:id',
         element: <BookDetails></BookDetails>,
-        loader: () => fetch('../public/booksData.json')
+        loader: () => fetch('https://saidul24.github.io/books-json-data/books.json')
       }
     ],
 
