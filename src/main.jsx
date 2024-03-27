@@ -11,11 +11,14 @@ import Home from './Pages/Home/Home';
 import ListedBooks from './Pages/ListedBooks/ListedBooks';
 import PagesToRead from './Pages/PagesToRead/PagesToRead';
 import BookDetails from './component/BookDetails/BookDetails';
+import Error from './Pages/Error/Error'
+import ReadBooks from './component/ReadBooks/ReadBooks';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Roots></Roots>,
+    errorElement:<Error></Error> ,
     children: [
       {
         path: "/",
@@ -23,7 +26,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/listedBooks',
-        element: <ListedBooks></ListedBooks>
+        element: <ListedBooks></ListedBooks>,
+        loader: () => fetch('https://saidul24.github.io/books-json-data/books.json')
       },
       {
         path: '/PToRead',
@@ -33,6 +37,10 @@ const router = createBrowserRouter([
         path: '/book/:id',
         element: <BookDetails></BookDetails>,
         loader: () => fetch('https://saidul24.github.io/books-json-data/books.json')
+      },
+      {
+        path: '/listedBooks/readBooks',
+        element: <ReadBooks></ReadBooks>
       }
     ],
 
