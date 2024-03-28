@@ -12,8 +12,8 @@ import ListedBooks from './Pages/ListedBooks/ListedBooks';
 import PagesToRead from './Pages/PagesToRead/PagesToRead';
 import BookDetails from './component/BookDetails/BookDetails';
 import Error from './Pages/Error/Error'
-import ReadBooks from './component/ReadBooks/ReadBooks';
 import AboutUs from './Pages/ListedBooks/AboutUs/AboutUs';
+import OnlyBooks from './Pages/OnlyBooks/OnlyBooks';
 
 
 const router = createBrowserRouter([
@@ -40,10 +40,10 @@ const router = createBrowserRouter([
         element: <BookDetails></BookDetails>,
         loader: () => fetch('https://saidul24.github.io/books-json-data/books.json')
       },
-      // {
-      //   path: '/onlyBooks:id',
-      //   element: <OnliBook>,
-      // }
+      {
+        path: '/onlyBooks',
+        element: <OnlyBooks></OnlyBooks>
+      },
       {
         path: '/aboutUs',
         element: <AboutUs></AboutUs>
