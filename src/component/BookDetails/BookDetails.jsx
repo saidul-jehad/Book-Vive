@@ -1,7 +1,7 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { getStoredBookRead, saveBookRead, saveWishlistBook } from "../../Utility/LocalStorage";
+import { saveBookRead, saveWishlistBook } from "../../Utility/LocalStorage";
 
 const BookDetails = () => {
     const books = useLoaderData();

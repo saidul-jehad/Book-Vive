@@ -5,7 +5,7 @@ import { HiOutlineUsers } from "react-icons/hi2";
 import { MdOutlineContactPage } from "react-icons/md";
 import { Link } from 'react-router-dom';
 
-const ReadBooks = ({ book }) => {
+const WishlistBooks = ({ book }) => {
     const { image, tags, bookName, bookId, author, category, publisher, yearOfPublishing, rating, totalPages } = book;
     
     return (
@@ -54,8 +54,8 @@ const ReadBooks = ({ book }) => {
     );
 };
 
-ReadBooks.propTypes = {
+WishlistBooks.propTypes = {
     book: PropTypes.object
 }
 
-export default ReadBooks;
+export default WishlistBooks;

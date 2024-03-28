@@ -13,6 +13,8 @@ import PagesToRead from './Pages/PagesToRead/PagesToRead';
 import BookDetails from './component/BookDetails/BookDetails';
 import Error from './Pages/Error/Error'
 import ReadBooks from './component/ReadBooks/ReadBooks';
+import AboutUs from './Pages/ListedBooks/AboutUs/AboutUs';
+
 
 const router = createBrowserRouter([
   {
@@ -38,9 +40,13 @@ const router = createBrowserRouter([
         element: <BookDetails></BookDetails>,
         loader: () => fetch('https://saidul24.github.io/books-json-data/books.json')
       },
+      // {
+      //   path: '/onlyBooks:id',
+      //   element: <OnliBook>,
+      // }
       {
-        path: '/listedBooks/readBooks',
-        element: <ReadBooks></ReadBooks>
+        path: '/aboutUs',
+        element: <AboutUs></AboutUs>
       }
     ],
 

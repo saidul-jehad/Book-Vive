@@ -7,11 +7,37 @@ import { useEffect, useState } from 'react';
 import { getStoredBookRead, getWishlistBook } from '../../Utility/LocalStorage';
 
 const ListedBooks = () => {
+    const books = useLoaderData()
 
     const [readBooks, setReadBooks] = useState([])
+    const [displayReadBooks, setDisplayReadBooks] = useState([])
+    const [sort, setSort] = useState('')
     const [listWish, setListWish] = useState([])
 
-    const books = useLoaderData()
+
+    useEffect(() => {
+        if (sort === 'rating') {
+            const newReadBooks = readBooks.sort((a, b) => b.rating - a.rating)
+            setDisplayReadBooks(newReadBooks)
+            // console.log(newReadBooks);
+        }
+
+        else if (sort === 'numBerOfPage') {
+            const newReadBooks = readBooks.sort((a, b) => b.totalPages - a.totalPages)
+            setDisplayReadBooks(newReadBooks)
+            // console.log(newReadBooks);
+        }
+        else if (sort === 'publishedYear') {
+            const newReadBooks = readBooks.sort((a, b) => b.yearOfPublishing - a.yearOfPublishing)
+            setDisplayReadBooks(newReadBooks)
+            // console.log(newReadBooks);
+        }
+    }, [sort])
+
+
+    const handleReadBook = s => {
+        setSort(s)
+    }
 
     useEffect(() => {
         const storedReadBook = getStoredBookRead();
@@ -25,27 +51,28 @@ const ListedBooks = () => {
                 }
             }
             setReadBooks(bookReads)
+            setDisplayReadBooks(bookReads)
 
         }
     }, [books])
 
+    // second
+
     useEffect(() => {
         const storedWishlistBook = getWishlistBook();
-
         if (books.length > 0) {
             const wishlists = [];
             for (const id of storedWishlistBook) {
                 const book = books.find(book => book.bookId === id)
                 if (book) {
-                    listWish.push(book)
+                    wishlists.push(book)
                 }
             }
-            console.log(wishlists)
-            // setListWish(wishlists)
-
+        
+            setListWish(wishlists)
         }
 
-    }, [])
+    }, [books])
 
     return (
         <div className='p-4'>
@@ -55,32 +82,38 @@ const ListedBooks = () => {
                 <div className='mt-8 mb-4 text-center'>
 
                     <details className="dropdown">
-                        <summary className="m-1 btn">Short By</summary>
+                        <summary className="m-1 btn bg-green-400 text-white">Short By</summary>
                         <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-                            <li><a>Rating</a></li>
-                            <li><a>Number of Page</a></li>
-                            <li><a>Published Year</a></li>
+                            <li onClick={() => handleReadBook('rating')}><a>Rating</a></li>
+                            <li onClick={() => handleReadBook('numBerOfPage')}><a>Number of Page</a></li>
+                            <li onClick={() => handleReadBook('publishedYear')}><a>Published Year</a></li>
                         </ul>
                     </details>
                 </div>
             </div>
             <Tabs>
                 <TabList>
-                    <Tab>title 1</Tab>
-                    <Tab>title 2</Tab>
+                    <Tab>Read Books</Tab>
+                    <Tab>WhishList Books </Tab>
                 </TabList>
 
                 <TabPanel>
                     <div className='flex flex-col gap-5'>
                         {
-                            readBooks.map(book => <ReadBooks key={book.bookId} book={book}> </ReadBooks>)
+                            displayReadBooks.map(book => <ReadBooks
+                                key={book.bookId}
+                                book={book}
+                            > </ReadBooks>)
                         }
                     </div>
                 </TabPanel>
                 <TabPanel>
                     <div className='flex flex-col gap-5'>
                         {
-                            listWish.map(book => <WishlistBooks key={book.bookId} book={book}></WishlistBooks>)
+                            listWish.map(book => <WishlistBooks
+                                key={book.bookId}
+                                book={book}
+                            ></WishlistBooks>)
                         }
                     </div>
                 </TabPanel>
